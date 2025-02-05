@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/bg.jpeg");
+  background-size: 1000px;
+
+  background-position: center center;
+}
+.paper {
+  position: absolute;
+  width: 350px;
+  height: 250px; /* Adjust height as needed */
+  background-image: url("images/paper.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 500px;
+  transform: rotateZ(-5deg);
+}
+.paper:hover {
+  transform: rotateZ(-3deg) scale(1.05); /* Adds slight hover effect */
+}
+
+.paper-content {
+  position: relative; /* Ensures text stays above background */
+  z-index: 1;
+  text-align: center;
+  color: #000;
+}
+
+.paper-heart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.paper-image {
+  padding: 10px;
+}
+.paper-image p {
+  font-size: 30px;
+}
+
+.heart-img {
+  width: 52px;
+  height: 52px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.6;
+}
+img {
+  max-height: 200px;
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+p {
+  font-family: "Zeyada";
+  font-size: 50px;
+  color: rgb(0, 0, 100);
+  opacity: 0.75;
+  filter: drop-shadow(2px 1.5px 1px rgba(0, 0, 105, 0.9));
+}
